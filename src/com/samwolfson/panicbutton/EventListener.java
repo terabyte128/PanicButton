@@ -6,7 +6,6 @@ import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
-import org.bukkit.entity.IronGolem;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
@@ -52,7 +51,7 @@ public class EventListener implements Listener {
         int undesirables = 0;
 
         for (Entity e : nearby) {
-            if (e.getType().equals(EntityType.IRON_GOLEM) || e.getType().equals(EntityType.ZOMBIFIED_PIGLIN)) {
+            if (e.getType().equals(EntityType.IRON_GOLEM) || e.getType().equals(EntityType.PIG_ZOMBIE)) {
                 e.remove();
                 undesirables++;
             }
