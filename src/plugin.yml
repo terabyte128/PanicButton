@@ -1,0 +1,5 @@
+name: PanicButton
+version: 0.0.1
+author: Sam Wolfson
+main: com.samwolfson.panicbutton.PanicButton
+api-version: 1.15

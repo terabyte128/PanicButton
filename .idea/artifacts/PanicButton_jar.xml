@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PanicButton:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PanicButton_jar</output-path>
+    <root id="archive" name="PanicButton.jar">
+      <element id="module-output" name="PanicButton" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../api/spigot-api-1.15.2-R0.1-20200528.094007-111.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
