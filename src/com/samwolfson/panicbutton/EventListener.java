@@ -49,16 +49,16 @@ public class EventListener implements Listener {
         Collection<Entity> nearby = clickedBlock.getWorld()
                 .getNearbyEntities(clickedBlockLocation, BOUNDING_BOX_SIZE, BOUNDING_BOX_SIZE, BOUNDING_BOX_SIZE);
 
-        int golems = 0;
+        int undesirables = 0;
 
         for (Entity e : nearby) {
-            if (e.getType().equals(EntityType.IRON_GOLEM)) {
+            if (e.getType().equals(EntityType.IRON_GOLEM) || e.getType().equals(EntityType.ZOMBIFIED_PIGLIN)) {
                 e.remove();
-                golems++;
+                undesirables++;
             }
         }
 
-        System.out.println("Killed " + golems + " Iron Golems.");
+        System.out.println("Killed " + undesirables + " Undesirable Mobs.");
         event.getPlayer().getServer().broadcastMessage("PANIC!!!1!!");
     }
 }
